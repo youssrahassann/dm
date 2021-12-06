@@ -11,71 +11,63 @@
     <a href="newstudent.html" target="_self">New Student</a>
 
 
-<form action="results.html" method="GET" enctype="multipart/form-data"></form>
+<form action="#" method="GET" >
 
 <hr/>
-
 <h2>Personal Information </h2>
-    <div>
-      <label for="name">Full Name</label>
-      <input type="text" name="name" id="name" required>
-
-    </div>
-  
-  
-    <label for="date">Birthdate</label>
-    <input type="date" name="date" id="date" min="2019-06-10">
-  </div>
-  
-
-
-
-  <div>
-   Gender:
-    <div>
-      <label for="male">Male</label>
-      <input type="radio" name="gender" id="male" value="male">
-    </div>
-    <div>
-      <label for="female">Female</label>
-      <input type="radio" name="gender" id="female" value="female">
-    </div>
-  </div>
-
+   
+      <label> 
+        Full Name:
+      <input type="text" name="txtfullname" >
+    </label>
+  <p>
+    <label>
+      Birthdate:
+    <input type="date" name="txtbirthdate" >
+  </label>
+</p>
+      <label> 
+        Gender:
+      <input type="radio" name="gender"  value="male">
+      Male
+      <input type="radio" name="gender"  value="female">
+      Female
+    </label> 
 <hr/>
-
-  <div>
   <h2>Contact Information</h2>
-  <div>
-  <div>
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email" required>
-  </div>
-  <div>
-    <label for="phone">Phone</label>
-    <input type="tel" name="phone" id="phone">
-  </div>
-  <div>
-    <label for="address">Address</label>
-    <input type="address" name="address" id="address">
-  </div>
- 
-
-</form>
-
+  <p>
+    <label>
+      Email:
+    <input type="email" name="email"  required>
+    </label>
+  </p>
+<p>
+    <label >
+      Phone
+      <input type="tel" name="phone">
+    </label>
+  </p>
+<p>
+  <label>
+    Address:
+    <textarea rows="5" cols="100" name="txtaddress" ></textarea>
+  </label>
+  </p>
     <hr/>
-
-<div>
   <h2>University Information</h2>
-<div>
-  <label for="universityinformation">Choose youre factuly</label>
-  <select name="universityinformation" id=universityinformation" multiple>
-    <option value="F1">F1</option>
-    <option value="F2">F2</option>
-    <option label="F1" value="F1"></option>
-  </select>
-</div>
-<div>   
+  <p>
+  <label>
+Choose Your Faculty:
+<select name="faculty">
+<option value="f1">Faculty of Computer and Information Technology
+</option>
+<option value="f2">Faculty 2
+</option>
+</select>
+  </label>
+</p> 
+  <input type="submit">
+</form>
 </body>
   </html>    
       
